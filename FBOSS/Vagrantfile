@@ -1,0 +1,19 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.box_check_update = true
+
+  config.vm.provider "virtualbox" do |vb|
+    # Give it enough memory and cpus to speed up the compile/build process
+    vb.memory = "5120"
+    vb.cpus = 3
+    
+    # change interface type, speeds up internet access on OSX
+    vb.customize ["modifyvm", :id, "--nictype1", "Am79C973"]
+  end
+  
+  config.vm.provision :shell, :path => "./scripts/build-external-dependencies.sh", :run => :once
+  
+end
