@@ -15,6 +15,7 @@
 *.iml
 
 # binaries
+fboss.tar
 
 # Vagrant
 .vagrant
