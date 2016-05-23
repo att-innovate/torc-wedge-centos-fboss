@@ -21,9 +21,9 @@ up with a reliable Docker environment which allowed us to do things that where b
 
 ![torc diagram](https://github.com/att-innovate/torc-wedge-centos-fboss/blob/master/FBOSS/docs/torc.png?raw=true)
 
-Picture from: [Facebook Keynote - Open Networking Summit 2016 (slides)][6]
+Picture, slide 33: [Facebook Keynote - Open Networking Summit 2016 (slides)][6]
 
-We will contribute the complete setup including source code to Open Source as a refernce architecture .. stay tuned.
+We will contribute the complete setup including all source code to Open Source as a refernce architecture for a **T**op-**o**f-**R**ack-**C**ontroller based autonomous rack .. stay tuned.
 
 [1]: https://github.com/Broadcom-Switch/OpenNSL
 [2]: http://www.edge-core.com/temp/ec_download/1602/Wedge-16X_DS_R01.pdf
