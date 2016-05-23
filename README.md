@@ -13,6 +13,7 @@ Fortunately we found that version `1.7.1, build 786b29d/1.7.1` works suprsingly 
 
 Yet that is still not the end of the hack. The OpenNSL library wants to run a `real-time scheduling` task. That task needs to run continously for longer
 than allowed by default for a cgroup-managed task. We had to do some additional hacking around `cpu.rt_runtime_us` as described in [Docker Issue 13983][5].
+We added some backdoor to our FBOSS container to be able to orchestrate that multi-step startup process.
 
 #### The Result ####
 
