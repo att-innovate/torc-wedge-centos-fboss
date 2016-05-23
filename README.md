@@ -10,7 +10,7 @@ Nowadays if you have to run Ubuntu on CentOS you probably think about using [Doc
 Fortunately we found that version `1.7.1, build 786b29d/1.7.1` works suprsingly reliable on our Wedge.
 
 Yet that is still not the end of the hack. The OpenNSL library wants to run a `real-time scheduling` task. That task needs to run continously for longer
-than allowed by default for a cgroup-managed task. We had to do some additional hacking around `cpu.rt_runtime_us` as described in [Docker Issue 13983][5]
+than allowed by default for a cgroup-managed task. We had to do some additional hacking around `cpu.rt_runtime_us` as described in [Docker Issue 13983][5].
 
 This repository contains all the scripts and steps required to get that hack going. We finally not only got FBOSS running under CentOS but we also ended
 up with a reliable Docker environment, which allowed us to do things that where beyond our immagination.
