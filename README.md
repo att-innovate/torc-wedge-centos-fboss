@@ -15,10 +15,15 @@ than allowed by default for a cgroup-managed task. We had to do some additional 
 This repository contains all the scripts and steps required to get that hack going. We finally not only got FBOSS running under CentOS but we also ended
 up with a reliable Docker environment, which allowed us to do things that where beyond our immagination.
 
-![image](https://github.com/att-innovate/torc-wedge-centos-fboss/blob/master/FBOSS/docs/torc.png?raw=true)
+![torc diagram](https://github.com/att-innovate/torc-wedge-centos-fboss/blob/master/FBOSS/docs/torc.png?raw=true)
+
+Picture from: [Facebook Keynote - Open Networking Summit 2016 (slides)][6]
+
+We will contribute the whole setup including source code to Open Source as a reference architecture .. stay tuned.
 
 [1]: https://github.com/Broadcom-Switch/OpenNSL
 [2]: http://www.edge-core.com/temp/ec_download/1602/Wedge-16X_DS_R01.pdf
 [3]: https://github.com/facebook/fboss
 [4]: https://www.docker.com
 [5]: https://github.com/docker/docker/issues/13983
+[6]: http://events.linuxfoundation.org/sites/events/files/slides/ONS-2016-fb-keynote-v3_0.pdf
