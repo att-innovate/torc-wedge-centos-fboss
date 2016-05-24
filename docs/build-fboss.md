@@ -2,7 +2,7 @@
 
 Tested on MacBook Pro under OSX El Capitan, requires:
 - [VirtualBox 5.0.20][1]
-- [Vagrant 1.7.4][2], the Open Network Switch Library that is required by the Trident II switch chip only supports **CentOS 6.5**.
+- [Vagrant 1.7.4][2]
 - Host with >= 5GB of memory and >= 3 cpus
 
 #### Build Dependencies ####
