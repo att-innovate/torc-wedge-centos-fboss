@@ -11,9 +11,6 @@ Replace WEDGE_IP with the IP of your Wedge Microserver.
 
 This assumes that `fboss.tar.gz` got previously transfered to the `/tmp/`folder.
 
-    $ cd ./torc-wedge-centos-fboss/Docker/fboss/provision
-    $ tar -zxvf /tmp/fboss.tar.gz
-    $ mv wedge_agent ./bin
-    $ cd ..
-    $ docker build -t fboss .
+    $ cd ./torc-wedge-centos-fboss/docker/scripts
+    $ ./build-fboss-container.sh
 
