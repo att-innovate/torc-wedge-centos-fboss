@@ -20,7 +20,7 @@ cp wedge_agent pkg/
 
 cpDependencies pkg/lib/ wedge_agent
 
-tar --directory pkg/ -cvf /vagrant/fboss.tar .
+tar --directory pkg/ -zcvf /vagrant/pkg/fboss.tar.gz .
 
 
 
