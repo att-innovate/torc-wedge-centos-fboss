@@ -20,7 +20,7 @@ We added some backdoor to our FBOSS container and some special startup script to
 This repository contains all the scripts and steps required to get that hack going. We finally not only got FBOSS running under CentOS but we also ended
 up with a reliable Docker environment which allowed us to do things that where beyond our immagination.
 
-![torc diagram](https://github.com/att-innovate/torc-wedge-centos-fboss/blob/master/FBOSS/docs/torc.png?raw=true)
+![torc diagram](https://github.com/att-innovate/torc-wedge-centos-fboss/blob/master/docs/torc.png?raw=true)
 
 Picture, slide 33: [Facebook Keynote - Open Networking Summit 2016 (slides)][6]
 
