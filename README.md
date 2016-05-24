@@ -8,7 +8,7 @@ Btw, out of the box that is not as easy as you would think. The problem:
 
 #### The Hack ####
 
-Nowadays if you have to run Ubuntu on CentOS you probably think about using [Docker][4]. But the 2.6 kernel of CentOS 6.5 is not officially supported by Docker.
+Nowadays if you have to run Ubuntu on CentOS you probably plan to use [Docker][4]. But the 2.6 kernel of CentOS 6.5 is not officially supported by Docker.
 Fortunately we found that Docker version "1.7.1, build 786b29d/1.7.1" works suprisingly reliable on our Wedge.
 
 Yet that is still not the end of the hack. The OpenNSL library wants to run a `real-time scheduling` task. That task needs to run continously for longer
