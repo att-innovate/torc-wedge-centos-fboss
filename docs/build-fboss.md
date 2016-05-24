@@ -17,7 +17,13 @@ Tested on MacBook Pro under OSX El Capitan, requires:
     $ /vagrant/scripts/build-package.sh
     $ exit
 
-FBOSS package, `fboss.tar.gz` will be available in the `./fboss/pkg` directory on the host.
+FBOSS package, `fboss.tar.gz` will be available in the `./pkg` directory on the host.
+
+#### Transfer FBOSS on to your Facebook Wedge
+
+Replace WEDGE_IP with the IP of your Wedge Microserver.
+
+    $ scp ./pkg/fboss.tar.gz root@WEDGE_IP:/tmp 
 
 [1]: https://www.virtualbox.org
 [2]: https://www.vagrantup.com
