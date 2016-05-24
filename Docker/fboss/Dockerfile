@@ -1,0 +1,8 @@
+FROM ubuntu:14.04
+
+RUN apt-get update -qq
+
+COPY ./provision/bin/wedge_agent /
+COPY ./provision/lib /usr/lib/
+COPY ./provision/config/torc.json /
+
