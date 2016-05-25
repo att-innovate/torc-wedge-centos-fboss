@@ -7,3 +7,4 @@ COPY ./provision/bin/containerbackdoor /
 COPY ./provision/lib /usr/lib/
 COPY ./provision/config/torc.json /
 
+ENTRYPOINT ["container-backdoor"]
