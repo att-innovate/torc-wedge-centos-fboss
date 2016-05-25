@@ -4,7 +4,7 @@ Btw, out of the box that is not as easy as you would think. The problem:
 
 - [OpenNSL][1], the Open Network Switch Library that is required by the Trident II switch chip only supports **CentOS 6.5**.
 - [Facebook Wedge 16X (pdf)][2] comes with **CentOS 6.5** pre-installed, reason see above.
-- [FBOSS][3], the Facebook Open Switching System Software for controlling the switch comes with build instructions for **Ubuntu 14.04**.
+- [FBOSS][3], the Facebook Open Switching System Software for controlling the switch comes with build instructions for **Ubuntu 14.04**. But it requires OpenNSL kernel modules which are only available for **CentOS 6.5**.
 
 #### The Hack ####
 
