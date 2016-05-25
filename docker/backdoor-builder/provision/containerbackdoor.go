@@ -1,19 +1,18 @@
 package main
 
 import (
-	"net/http"
 	"encoding/json"
-	"os"
-	"os/exec"
-	"html"
-	"strings"
 	"flag"
 	"fmt"
+	"html"
+	"net/http"
+	"os"
+	"os/exec"
+	"strings"
 )
 
 // cmdline argument
 var portNumber = flag.Int("port", 8085, "Port number listening on")
-
 
 type Command struct {
 	Cmd string `json:"cmd"`
@@ -69,9 +68,9 @@ func handler(responseWriter http.ResponseWriter, request *http.Request) {
 func writeResponse(responseWriter http.ResponseWriter, code int, message string) {
 	responseWriter.WriteHeader(code)
 	data := struct {
-			Code    int    `json:"code"`
-			Message string `json:"message"`
-    }{
+		Code    int    `json:"code"`
+		Message string `json:"message"`
+	}{
 		code,
 		message,
 	}
@@ -83,6 +82,6 @@ func main() {
 	flag.Parse()
 	listenOn := fmt.Sprintf(":%v", *portNumber)
 
-    http.HandleFunc("/", handler)
-    http.ListenAndServe(listenOn, nil)
+	http.HandleFunc("/", handler)
+	http.ListenAndServe(listenOn, nil)
 }
