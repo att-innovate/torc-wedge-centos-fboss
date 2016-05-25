@@ -12,7 +12,7 @@ ENV PATH /go/bin:/usr/local/go/bin:$PATH
 ENV GOPATH /go
 
 # Compile containerbackdoor
-COPY ./provision/containerbackdoor.go /go/src/app
+COPY ./provision/containerbackdoor.go /go/src/app/
 RUN go install app
 
 VOLUME /target
