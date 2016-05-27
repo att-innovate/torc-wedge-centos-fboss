@@ -9,5 +9,13 @@ Replace WEDGE_IP with the IP of your Wedge Microserver.
     $ cd torc-wedge-centos-fboss/wedge/scripts
     $ ./run-fboss-container.sh
 
+Test fboss using fboss-client
+
+    $ docker run fboss-client list_routes
+    $ docker run fboss-client list_ports
+
+Stop fboss
+
+    $ ./stop-fboss-container.sh
 
 [1]: ./build-container.md
