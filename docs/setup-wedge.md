@@ -11,10 +11,10 @@ Verify that SELinux is in `permissive` mode
 
     $ getenforce
 
-If mode is set to `enforcing`, check [Permissive versus enforcing][1] for steps to change it.
+If mode is set to `enforcing`, check [Permissive versus enforcing][1] for steps how to change it.
 
 Turn of firewall
 
     $ iptables -F
 
-[1] https://wiki.gentoo.org/wiki/SELinux/Tutorials/Permissive_versus_enforcing
+[1]: https://wiki.gentoo.org/wiki/SELinux/Tutorials/Permissive_versus_enforcing
